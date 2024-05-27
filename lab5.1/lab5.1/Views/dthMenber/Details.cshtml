@@ -1,0 +1,63 @@
+﻿@model lab5._1.Models.dthMenber
+
+@{
+    ViewBag.Title = "chi tiết thành viên";
+}
+
+<h2>chi tiết thành viên</h2>
+
+<div>
+    <h4>chi tiết thành viên</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Mã số
+        </dt>
+        <dd>
+            @Html.DisplayFor(Model => Model.ID)
+        </dd>
+        <dt>
+            Tên đăng nhập
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            họ và tên 
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fullname)
+        </dd>
+
+        <dt>
+            mật khẩu
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+           Tuổi
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+        <dt>
+            Email
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Quay lại", "DthCreateOne")
+</p>
